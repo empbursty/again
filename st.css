@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+.laypos {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.laypos:before {
+	content: "";
+	display: table;
+}
+.laypos:after {
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.left-text {
+	text-align: left;
+}
+.right-text {
+	text-align: right;
+}
+/* .footer.height = .footer.marginTop = .wrapper:after.height */
+.footer {
+	height: 110px;
+	margin-top: -110px;
+	position: relative;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.wrapper:after {
+	content: "";
+	display: block;
+	height: 110px;
+}
